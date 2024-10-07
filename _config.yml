@@ -1,7 +1,0 @@
-baseurl: "/ExaminationHTML"
-
-url: "https://adriantayeh.github.io"
-
-exclude:
--"node_modules"
--"src/js"
