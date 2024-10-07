@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../../Fonts/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../../Fonts/Inter_28pt-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../../Fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #042D24;
+}
+
+
+nav {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.customLogo {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.flexBoxContainer {
+    width: 100dvw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #D5D5D5;
+    font-size: 1.5em;
+}
+
+.contentContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+    border: 3px solid #D5D5D5;
+    border-radius: 7px;
+}
+
+.contentLink {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 14%;
+}
+
+.contentContainer:hover {
+    background-color: #D5D5D5;
+    color: #042D24; 
+}
+
+
+.imgGallery {
+    width: 100dvw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100dvh;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.imgContainer{
+    overflow: hidden;
+    height: 20%;
+    margin: 2%;
+    border: 3px solid #D5D5D5;    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    width: 23dvw;
+    height: 23dvh;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+svg {
+    width: 40%;
+    height: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .flexBoxContainer {
+        flex-direction: column;
+        width: 100dvw;
+    }
+    .contentLink {
+        margin: 2%;
+        width: 100%;
+        font-size: 3em;
+    }
+
+    svg {
+        width: 30%;
+        height: 30%;
+    }
+
+    .imgGallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100dvw;
+        max-height: 300dvh;
+    }
+
+    .imgContainer {
+        height: 100dvh;
+        width: 100dvw;
+    }
+}

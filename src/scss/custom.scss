@@ -1,0 +1,32 @@
+$nav-pills-link-active-bg: #FFFFFF;
+$primary: #042D24;
+$secondary: #FFFFFF;
+$headings-font-weight: 700;
+$nav-link-hover-color: #8C7AFF;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+
+
+$custom-theme-colors:(
+    "customLightGreen": #DAFF99,
+    "customGray": #D5D5D5,
+    "customPurple": #8C7AFF
+
+);
+
+$font-sizes: map-merge(
+    $font-sizes,
+    (
+        7: 5em,
+        8: 7em,
+        9: 10em
+    )  
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "~bootstrap/scss/bootstrap";
