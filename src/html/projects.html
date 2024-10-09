@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script
       src="https://kit.fontawesome.com/338c1cb989.js"
@@ -22,17 +26,32 @@
     <header>
       <nav class="px-3 py-2 bg-primary">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start fw-bold">
-            <a href="../../index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fw-bold customLogo">Portfolio</a>
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav" id="myLink">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start fw-bold"
+          >
+            <a
+              href="../../index.html"
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fw-bold customLogo"
+              >Portfolio</a
+            >
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav"
+              id="myLink"
+            >
               <li>
-                <a href="projects.html" class="nav-link link-primary active">Projects</a>
+                <a href="projects.html" class="nav-link link-primary active"
+                  >Projects</a
+                >
               </li>
               <li>
-                <a href="about.html" class="nav-link link-customGray">About Me</a>
+                <a href="about.html" class="nav-link link-customGray"
+                  >About Me</a
+                >
               </li>
               <li>
-                <a href="contact.html" class="nav-link link-customGray">Contact Me</a>
+                <a href="contact.html" class="nav-link link-customGray"
+                  >Contact Me</a
+                >
               </li>
             </ul>
           </div>
@@ -43,28 +62,28 @@
       </nav>
     </header>
     <div class="imgGallery">
-      <img class="imgContainer" src="../img/img1.jpg" data-index="0">
-      <img class="imgContainer" src="../img/img2.jpg" data-index="1">
-      <img class="imgContainer" src="../img/img3.jpg" data-index="2">
-      <img class="imgContainer" src="../img/img4.jpg" data-index="3">
-      <img class="imgContainer" src="../img/img5.jpg" data-index="4">
-      <img class="imgContainer" src="../img/img6.jpg" data-index="5">
-      <img class="imgContainer" src="../img/img7.jpg" data-index="6">
-      <img class="imgContainer" src="../img/img8.jpg" data-index="7">
-      <img class="imgContainer" src="../img/img9.jpg" data-index="8">
+      <img class="imgContainer" src="../img/img1.jpg" data-index="0" />
+      <img class="imgContainer" src="../img/img2.jpg" data-index="1" />
+      <img class="imgContainer" src="../img/img3.jpg" data-index="2" />
+      <img class="imgContainer" src="../img/img4.jpg" data-index="3" />
+      <img class="imgContainer" src="../img/img5.jpg" data-index="4" />
+      <img class="imgContainer" src="../img/img6.jpg" data-index="5" />
+      <img class="imgContainer" src="../img/img7.jpg" data-index="6" />
+      <img class="imgContainer" src="../img/img8.jpg" data-index="7" />
+      <img class="imgContainer" src="../img/img9.jpg" data-index="8" />
     </div>
 
     <div class="swiper-container fullscreenSwiper" id="fullscreenSwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../img/img1.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img2.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img3.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img4.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img5.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img6.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img7.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img8.jpg"></div>
-        <div class="swiper-slide"><img src="../img/img9.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img1.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img2.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img3.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img4.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img5.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img6.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img7.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img8.jpg" /></div>
+        <div class="swiper-slide"><img src="../img/img9.jpg" /></div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
@@ -73,5 +92,67 @@
     </div>
 
     <script type="module" src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const galleryImages = document.querySelectorAll(".imgContainer");
+      const fullscreenSwiper = document.getElementById("fullscreenSwiper");
+      let swiperInstance = null;
+      console.log(galleryImages);
+
+      function initSwiper(initialSlide) {
+        if (!swiperInstance) {
+          swiperInstance = new Swiper(".fullscreenSwiper", {
+            initialSlide: initialSlide,
+            spaceBetween: 10,
+            slidesPerView: 1,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        } else {
+          swiperInstance.slideTo(initialSlide, 0);
+        }
+        fullscreenSwiper.style.display = "block";
+
+        document
+          .querySelector(".swiper-button-next")
+          .addEventListener("click", () => {
+            swiperInstance.slideNext();
+          });
+
+        document
+          .querySelector(".swiper-button-prev")
+          .addEventListener("click", () => {
+            swiperInstance.slidePrev();
+          });
+      }
+
+      fullscreenSwiper.addEventListener("click", function (e) {
+        if (e.target == fullscreenSwiper) {
+          fullscreenSwiper.style.display = "none";
+        }
+      });
+
+      galleryImages.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          initSwiper(index);
+        });
+      });
+
+      document.querySelector(".close-swiper").addEventListener("click", () => {
+        fullscreenSwiper.style.display = "none";
+        swiperInstance.destroy();
+        swiperInstance = null;
+      });
+
+      function myFunction() {
+        var navLinks = document.getElementById("myLink");
+        navLinks.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
