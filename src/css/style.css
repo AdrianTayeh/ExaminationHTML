@@ -52,6 +52,9 @@ span {
     justify-content: space-around;
     align-items: center;
     color: #D5D5D5;
+}
+
+.contentText {
     font-size: 1.5em;
 }
 
@@ -113,7 +116,10 @@ svg {
     .contentLink {
         margin: 2%;
         width: 100%;
-        font-size: 1.5em;
+    }
+
+    .contentText {
+        font-size: 2em;
     }
 
     svg {
