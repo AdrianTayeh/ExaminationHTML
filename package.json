@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "swiper": "^11.1.14"
   },
   "name": "htmlexamination",
   "version": "1.0.0",
@@ -12,7 +13,7 @@
     "sass": "^1.79.4"
   },
   "scripts": {
-    "dev": "parcel ./src/html/index.html"
+    "dev": "parcel ./index.html"
   },
   "keywords": [],
   "author": "",

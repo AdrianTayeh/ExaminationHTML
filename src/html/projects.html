@@ -20,7 +20,7 @@
       src="https://kit.fontawesome.com/338c1cb989.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -47,16 +47,35 @@
       </nav>
     </header>
     <div class="imgGallery">
-      <img class="imgContainer" src="../img/img1.jpg"></img>
-      <img class="imgContainer" src="../img/img2.jpg"></img>
-      <img class="imgContainer" src="../img/img3.jpg"></img>
-      <img class="imgContainer" src="../img/img4.jpg"></img>
-      <img class="imgContainer" src="../img/img5.jpg"></img>
-      <img class="imgContainer" src="../img/img6.jpg"></img>
-      <img class="imgContainer" src="../img/img7.jpg"></img>
-      <img class="imgContainer" src="../img/img8.jpg"></img>
-      <img class="imgContainer" src="../img/img9.jpg"></img>
-  </div>
+      <img class="imgContainer" src="../img/img1.jpg" data-index="0">
+      <img class="imgContainer" src="../img/img2.jpg" data-index="1">
+      <img class="imgContainer" src="../img/img3.jpg" data-index="2">
+      <img class="imgContainer" src="../img/img4.jpg" data-index="3">
+      <img class="imgContainer" src="../img/img5.jpg" data-index="4">
+      <img class="imgContainer" src="../img/img6.jpg" data-index="5">
+      <img class="imgContainer" src="../img/img7.jpg" data-index="6">
+      <img class="imgContainer" src="../img/img8.jpg" data-index="7">
+      <img class="imgContainer" src="../img/img9.jpg" data-index="8">
+    </div>
+
+    <div class="swiper-container fullscreenSwiper" id="fullscreenSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../img/img1.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img2.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img3.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img4.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img5.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img6.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img7.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img8.jpg"></div>
+        <div class="swiper-slide"><img src="../img/img9.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <button class="close-swiper">x</button>
+    </div>
+
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../js/app.js"></script>
   </body>
