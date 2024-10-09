@@ -50,7 +50,7 @@ span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #d5d5d5;
+  color: #8C7AFF;
 }
 
 .contentText {
@@ -63,7 +63,7 @@ span {
   display: flex;
   flex-direction: column;
   padding: 15%;
-  border: 3px solid #d5d5d5;
+  border: 3px solid #8C7AFF;
   border-radius: 7px;
 }
 
@@ -75,7 +75,7 @@ span {
 }
 
 .contentContainer:hover {
-  background-color: #d5d5d5;
+  background-color: #8C7AFF;
   color: #042d24;
 }
 
@@ -257,6 +257,19 @@ textarea {
   z-index: 1000;
 }
 
+@keyframes tilt-shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-90deg) translateX(0); }
+    50% { transform: rotate(-180deg)translateX(0); }
+    75% { transform: rotate(-270deg)translateX(0); }
+    100% { transform: rotate(-360deg); }
+}
+
+.shake {
+    animation: tilt-shake 0.5s ease-in-out;
+    animation-iteration-count: 2;
+}
+
 @media screen and (max-width: 768px) {
   .flexBoxContainer {
     flex-direction: column;
@@ -294,10 +307,12 @@ textarea {
 
   input {
     width: 100%;
+    box-shadow: none;
   }
 
   textarea {
     width: 100%;
+    box-shadow: none;
   }
 
   .customNav {

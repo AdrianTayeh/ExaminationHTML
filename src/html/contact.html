@@ -16,48 +16,75 @@
       src="https://kit.fontawesome.com/338c1cb989.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/script.js" type="module" defer></script>
   </head>
   <body>
     <header>
       <nav class="px-3 py-2 bg-primary">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="../../index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fw-bold customLogo">Portfolio</a>
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav" id="myLink">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="../../index.html"
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fw-bold customLogo"
+              >Portfolio</a
+            >
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav"
+              id="myLink"
+            >
               <li>
-                <a href="projects.html" class="nav-link link-customGray">Projects</a>
+                <a href="projects.html" class="nav-link link-customPurple"
+                  >Projects</a
+                >
               </li>
               <li>
-                <a href="about.html" class="nav-link link-customGray">About Me</a>
+                <a href="about.html" class="nav-link link-customPurple"
+                  >About Me</a
+                >
               </li>
               <li>
-                <a href="contact.html" class="nav-link link-primary active">Contact Me</a>
+                <a href="contact.html" class="nav-link link-customPurple active"
+                  >Contact Me</a
+                >
               </li>
             </ul>
           </div>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" alt="hamburger menu"></i>
         </a>
       </nav>
     </header>
     <div class="formContainer">
       <form>
         <p>Contact Me</p>
-        <input type="text" placeholder="First name">
-        <br>
-        <input type="text" placeholder="Last name">
-        <br>
-        <input type="email" placeholder="Email">
-        <br>
-        <input type="tel" placeholder="Phone number">
-        <br>
+        <input type="text" placeholder="First name" />
+        <br />
+        <input type="text" placeholder="Last name" />
+        <br />
+        <input type="email" placeholder="Email" />
+        <br />
+        <input type="tel" placeholder="Phone number" />
+        <br />
         <textarea col="7" rows="6" placeholder="Message"></textarea>
-        <br>
-        <input type="submit" value="Submit">
+        <br />
+        <input type="submit" id="shakeSubmit" value="Submit" />
       </form>
     </div>
     <script type="module" src="../js/app.js"></script>
+    <script>
+      window.onload = function() {
+        let inputs = document.querySelectorAll("input");
+
+        inputs.forEach(function(input) {
+          input.classList.add("shake");
+
+          setTimeout(function () {
+            button.classList.remove("shake");
+          }, 2000);
+        });
+      };
+    </script>
   </body>
 </html>
