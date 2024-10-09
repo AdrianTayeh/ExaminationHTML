@@ -20,6 +20,7 @@
       src="https://kit.fontawesome.com/338c1cb989.js"
       crossorigin="anonymous"
     ></script>
+    <script src="src/js/script.js"></script>
   </head>
   <body>
     <header>
@@ -34,7 +35,7 @@
               >Portfolio</a
             >
             <ul
-              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav"
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 nav-pills customNav" id="myLink"
             >
               <li>
                 <a href="src/html/projects.html" class="nav-link link-customGray"
@@ -54,9 +55,12 @@
             </ul>
           </div>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </nav>
     </header>
-    <div class="jumbotron jumbotron-fluid text-center text-secondary py-5 my-5">
+    <div class="jumbotron jumbotron-fluid text-center text-secondary py-5 my-5  px-5 px-md-0">
       <h1 class="fs-8">Hi, I'm Adrian!</h1>
       <p class="text-customLightGreen fs-4">I am a frontend developer with skills in <span class="fst-italic">HTML, CSS, JavaScript, React, and C#</span>
       </p>

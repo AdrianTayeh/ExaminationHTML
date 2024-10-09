@@ -31,6 +31,7 @@ nav {
   font-weight: bold;
 }
 
+
 .customLogo {
   font-size: 1.5em;
 }
@@ -220,6 +221,10 @@ textarea {
     padding: 10px;
 }
 
+.icon {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
   .flexBoxContainer {
     flex-direction: column;
@@ -262,4 +267,26 @@ textarea {
   textarea {
     width: 100%;
   }
+
+  .customNav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: end;
+    align-items: flex-end;
+  }
+
+  .icon {
+    display: block;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .show {
+    display: flex;
+  }
+
 }
