@@ -271,6 +271,39 @@ textarea {
     animation: tilt-shake 0.5s ease-in-out;
     animation-iteration-count: 2;
 }
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.bounce-in-left {
+  animation: bounceInLeft 2s ease;
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.bounce-in-right {
+  animation: bounceInRight 2s ease;
+}
 
 @media screen and (max-width: 768px) {
   .flexBoxContainer {

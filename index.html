@@ -56,8 +56,8 @@
       </nav>
     </header>
     <div class="jumbotron jumbotron-fluid text-center text-secondary py-5 my-5  px-5 px-md-0">
-      <h1 class="fs-8">Hi, I'm Adrian!</h1>
-      <p class="text-customLightGreen fs-4">I am a frontend developer with skills in <span class="fst-italic">HTML, CSS, JavaScript, React, and C#</span>
+      <h1 class="fs-8" id="animatedHeader">Hi, I'm Adrian!</h1>
+      <p class="text-customLightGreen fs-4" id="animatedText">I am a frontend developer with skills in <span class="fst-italic">HTML, CSS, JavaScript, React, and C#</span>
       </p>
     </div>
     <div class="flexBoxContainer">
@@ -94,6 +94,14 @@
         var navLinks = document.getElementById("myLink");
         navLinks.classList.toggle("show");
       }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        console.log('Script is running');
+        const textElement = document.getElementById('animatedText');
+        const headerElement = document.getElementById('animatedHeader');
+        textElement.classList.add('bounce-in-left');
+        headerElement.classList.add('bounce-in-right');
+      });
     </script>
   </body>
 </html>
