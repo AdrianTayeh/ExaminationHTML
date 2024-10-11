@@ -59,15 +59,15 @@
     <div class="formContainer">
       <form>
         <p>Contact Me</p>
-        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="First name" required minlength="2" maxlength="40"/>
         <br />
-        <input type="text" placeholder="Last name" />
+        <input type="text" placeholder="Last name" required minlength="2" maxlength="40"/>
         <br />
-        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="Email" required minlength="2" maxlength="40"/>
         <br />
         <input type="tel" placeholder="Phone number" />
         <br />
-        <textarea col="7" rows="6" placeholder="Message"></textarea>
+        <textarea col="7" rows="6" placeholder="Message" required></textarea>
         <br />
         <input type="submit" id="shakeSubmit" value="Submit" />
       </form>
@@ -85,6 +85,11 @@
           }, 2000);
         });
       };
+
+      function myFunction() {
+        var navLinks = document.getElementById("myLink");
+        navLinks.classList.toggle("show");
+      }   
     </script>
   </body>
 </html>

@@ -257,6 +257,12 @@ textarea {
   z-index: 1000;
 }
 
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+
+
 @keyframes tilt-shake {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(-90deg) translateX(0); }
