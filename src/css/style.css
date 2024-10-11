@@ -130,6 +130,7 @@ form {
   text-align: center;
   position: relative;
   transition: all 0.2s ease-in-out;
+  background-color: rgb(5, 126, 57);
 }
 
 p {
@@ -257,10 +258,6 @@ textarea {
   z-index: 1000;
 }
 
-input:invalid {
-    border: 2px dashed red;
-  }
-  
 
 
 @keyframes tilt-shake {

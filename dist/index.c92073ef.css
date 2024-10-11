@@ -119,6 +119,7 @@ svg {
 form {
   backdrop-filter: blur(10px);
   text-align: center;
+  background-color: #057e39;
   border-top: 1px solid #fff;
   border-left: 1px solid #fff;
   border-radius: 20px;
