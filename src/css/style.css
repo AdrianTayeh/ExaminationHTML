@@ -130,7 +130,6 @@ form {
   text-align: center;
   position: relative;
   transition: all 0.2s ease-in-out;
-  background-color: rgb(5, 126, 57);
 }
 
 p {
@@ -316,6 +315,10 @@ textarea {
   textarea {
     width: 100%;
     box-shadow: none;
+  }
+
+  form {
+    background-color: rgb(5, 126, 57);
   }
 
   .customNav {
