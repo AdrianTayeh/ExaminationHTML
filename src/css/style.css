@@ -34,6 +34,14 @@ nav {
   font-size: 1.5em;
 }
 
+#thankYouMessage {
+  display: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -49,7 +57,7 @@ span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #8C7AFF;
+  color: #8c7aff;
 }
 
 .contentText {
@@ -62,7 +70,7 @@ span {
   display: flex;
   flex-direction: column;
   padding: 15%;
-  border: 3px solid #8C7AFF;
+  border: 3px solid #8c7aff;
   border-radius: 7px;
 }
 
@@ -74,7 +82,7 @@ span {
 }
 
 .contentContainer:hover {
-  background-color: #8C7AFF;
+  background-color: #8c7aff;
   color: #042d24;
 }
 
@@ -250,25 +258,33 @@ textarea {
   background: none;
   border: none;
   color: white;
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
 }
 
-
-
 @keyframes tilt-shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-90deg) translateX(0); }
-    50% { transform: rotate(-180deg)translateX(0); }
-    75% { transform: rotate(-270deg)translateX(0); }
-    100% { transform: rotate(-360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg) translateX(0);
+  }
+  50% {
+    transform: rotate(-180deg) translateX(0);
+  }
+  75% {
+    transform: rotate(-270deg) translateX(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .shake {
-    animation: tilt-shake 0.5s ease-in-out;
-    animation-iteration-count: 2;
+  animation: tilt-shake 0.5s ease-in-out;
+  animation-iteration-count: 2;
 }
 @keyframes bounceInLeft {
   0% {
@@ -279,8 +295,12 @@ textarea {
     opacity: 1;
     transform: translateX(30px);
   }
-  80% { transform: translateX(10px); }
-  100% { transform: translateX(0); }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .bounce-in-left {
@@ -296,8 +316,12 @@ textarea {
     opacity: 1;
     transform: translateX(-30px);
   }
-  80% { transform: translateX(-10px); }
-  100% { transform: translateX(0); }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .bounce-in-right {
